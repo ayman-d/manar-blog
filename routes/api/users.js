@@ -6,6 +6,7 @@ const config = require("config");
 const jwt = require("jsonwebtoken");
 
 // ====================POST==================== //
+// not adding this to the application, this is only made to be used internally to add users if needed
 
 // @route   POST api/users **
 // @desc    Create User **
@@ -19,9 +20,7 @@ router.post("/", (req, res) => {
     res.status(400).json({ msg: "please provide all required information" });
   }
 
-  // check for existing user
   User.findOne({ email }).then(user => {
-    // send an error if user already exists
     if (user) res.status(400).json({ msg: "user already exists!" });
     const newUser = new User({
       name,

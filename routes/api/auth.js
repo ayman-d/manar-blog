@@ -64,19 +64,6 @@ router.get("/user", autherize, (req, res) => {
     .then(user => res.json(user));
 });
 
-// jwt.sign(
-//   { id: user.id },
-//   config.get("jwtSecret"),
-//   { expiresIn: 60 },
-//   (err, token) => {
-//     if (err) throw err;
-//     res.json({
-//       token,
-//       user: { id: user.id, name: user.name, email: user.email }
-//     });
-//   }
-// );
-
 router.post("/refresh", refresherize, (req, res) => {
   const refreshToken = req.body.headers["x-refresh-token"];
   const decoded = jwt.verify(refreshToken, config.get("jwtRefreshSecret"));

@@ -30,11 +30,11 @@ router.get("/", async (req, res) => {
 
 // ==================POST=================== //
 
-// @route   POST api/blogs **
-// @desc    Create Blog **
+// @route   POST api/videos **
+// @desc    Create video **
 // @access  Private **
 
-router.post("/", async (req, res) => {
+router.post("/", autherize, async (req, res) => {
   try {
     const newVideo = await Video.create(req.body);
     res.status(201).json({
@@ -52,11 +52,11 @@ router.post("/", async (req, res) => {
 
 // ================DELETE================== //
 
-//@route    DELETE api/items
-//@desc     Delete Item
+//@route    DELETE api/videos
+//@desc     Delete video
 //@access   Private
 
-router.delete("/:id", async (req, res) => {
+router.delete("/:id", autherize, async (req, res) => {
   try {
     const deleteVideo = await Video.findByIdAndDelete(req.params.id);
 

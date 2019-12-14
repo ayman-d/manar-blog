@@ -34,7 +34,7 @@ router.get("/", async (req, res) => {
 // @desc    Create Link **
 // @access  Private **
 
-router.post("/", async (req, res) => {
+router.post("/", autherize, async (req, res) => {
   try {
     const newLink = await Link.create(req.body);
     res.status(201).json({
@@ -52,11 +52,11 @@ router.post("/", async (req, res) => {
 
 // ================DELETE================== //
 
-//@route    DELETE api/items
-//@desc     Delete Item
+//@route    DELETE api/links
+//@desc     Delete link
 //@access   Private
 
-router.delete("/:id", async (req, res) => {
+router.delete("/:id", autherize, async (req, res) => {
   try {
     const deleteLink = await Link.findByIdAndDelete(req.params.id);
 

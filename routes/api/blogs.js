@@ -37,8 +37,6 @@ router.get("/:id", async (req, res) => {
     const blog = await Blog.findById(req.params.id);
 
     if (!blog) {
-      // we have to add return here otherwise it'll say the headers are already sent, this is because the same try
-      // block has a res.status at the bottom
       return res
         .status(400)
         .json({ success: false, msg: "Could not find post in the data base!" });
