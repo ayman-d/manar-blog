@@ -17,4 +17,4 @@ Authentication:
 - this part took the larger amount of time, the roles or the interface of the app is split into two parts:
   - Regular users can view the main page, view a specific blog post in full, go to the contact page, go to various links.
   - Admin users can, on top of the above, go to the Admin page which will only open once login is successful, and be able to add, edit, or delete a blog post, in addition to adding video suggestions and links.
-  - Authentication tokens are designed to live for 30 seconds and refresh automatically with a refresh token that lives for a week, the json web token secret key are stored in a config folder which is ignored in this repository.
+- Authentication tokens are designed to live for 30 seconds and refresh automatically with a refresh token that lives for a week, the json web token secret key are stored in a config folder which is ignored in this repository.
