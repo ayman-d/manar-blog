@@ -1,0 +1,19 @@
+.hero-section {
+  background-image: url("../../images/pic.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 88vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-text {
+  color: white;
+  font-size: 5em;
+  font-family: "Kaushan Script", cursive;
+}

@@ -1,0 +1,11 @@
+.blog-body {
+  white-space: pre-wrap;
+}
+
+.side-section {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkGwacKsse_9twEOGUww0s5jUUxnyrwdCGebyRxrqyR6Zi8qMQ&s");
+}
+
+pre {
+  border: 1px #333 solid;
+}
