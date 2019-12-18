@@ -51,9 +51,6 @@ class AppNavbar extends Component {
                     className="beep waves-effect waves-light btn-md deep-orange darken-1"
                     to={"/contact"}
                   >
-                    <i className="zoos material-icons deep-orange darken-1 left">
-                      contact_mail
-                    </i>
                     Contact Me
                   </Link>
                 </li>
@@ -62,7 +59,7 @@ class AppNavbar extends Component {
           </div>
         </nav>
 
-        <ul className="sidenav grey darken-4" id="mobile-demo">
+        <ul className="sidenav sidenav-close grey darken-4" id="mobile-demo">
           <li>
             <a href="/">
               <i className="fa fa-instagram white-text"></i>
@@ -83,15 +80,12 @@ class AppNavbar extends Component {
               <i className="fa fa-youtube white-text"></i>
             </a>
           </li>
-          <li>
+          <li className="sidenav-trigger">
             <Link
               className="beep waves-effect waves-light btn-md deep-orange darken-1 white-text"
               style={{ fontSize: "20px" }}
               to={"/contact"}
             >
-              <i className="zoos material-icons deep-orange darken-1 left white-text">
-                contact_mail
-              </i>
               Contact Me
             </Link>
           </li>

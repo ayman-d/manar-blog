@@ -7,16 +7,21 @@ class Footer extends Component {
         <div style={{ textAlign: "left" }}>
           <footer
             className="page-footer grey darken-4"
-            style={{ height: "150px" }}
+            style={{
+              height: "15vh",
+              position: "absolute",
+              width: "100%",
+              marginTop: "10vh"
+            }}
           >
             <div className="footer-copyright">
-              <div className="col-md-4 container" style={{ marginTop: "10px" }}>
+              <div className="col-md-4 container" style={{ marginTop: "0px" }}>
                 © 2019 Copyright Manar-Blog
               </div>
               <div
                 className="col-md-4 container"
                 style={{
-                  marginTop: "10px",
+                  marginTop: "-5px",
                   marginLeft: "30px",
                   width: "140%"
                 }}
@@ -32,7 +37,7 @@ class Footer extends Component {
                   </a>
                 </div>
               </div>
-              <div className="col-md-4" style={{ marginTop: "30px" }}>
+              <div className="col-md-4" style={{ marginTop: "5px" }}>
                 <ul
                   className="right hide-on-med-and-down"
                   style={{ textAlign: "center", marginRight: "50px" }}

@@ -35,7 +35,7 @@ class BlogItem extends Component {
     return (
       <div
         className="row main-list-b"
-        style={{ overflow: "scroll", height: "200vh" }}
+        style={{ overflow: "scroll", height: "200vh", marginBottom: "-55px" }}
       >
         <div className="col-md-12">
           <Hero />
