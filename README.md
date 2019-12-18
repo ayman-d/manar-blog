@@ -18,3 +18,9 @@ Authentication:
   - Regular users can view the main page, view a specific blog post in full, go to the contact page, go to various links.
   - Admin users can, on top of the above, go to the Admin page which will only open once login is successful, and be able to add, edit, or delete a blog post, in addition to adding video suggestions and links.
 - Authentication tokens are designed to live for 30 seconds and refresh automatically with a refresh token that lives for a week, the json web token secret key are stored in a config folder which is ignored in this repository.
+
+Deployment:
+- Digital Ocean Droplet
+- Nginx for reverse proxy
+- PM2 process manager for node JS
+- LetsEncrypt for auto-renewable SSL Certificate
